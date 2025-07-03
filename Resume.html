@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oluwasanjo Stephen Adebayo - Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            font-weight: 300;
+        }
+
+        .header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            margin-bottom: 20px;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .section {
+            background: white;
+            margin-bottom: 30px;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+
+        .section h2 {
+            color: #667eea;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+        }
+
+        .job {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .job:last-child {
+            border-bottom: none;
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 10px;
+            flex-wrap: wrap;
+        }
+
+        .job-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .company {
+            font-size: 1.1rem;
+            color: #667eea;
+            font-weight: 500;
+        }
+
+        .date {
+            background: #667eea;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        .job ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .job li {
+            margin-bottom: 8px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .job li:before {
+            content: "▶";
+            color: #667eea;
+            position: absolute;
+            left: 0;
+        }
+
+        .education-item {
+            margin-bottom: 20px;
+        }
+
+        .degree {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .school {
+            color: #667eea;
+            font-weight: 500;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+
+        .skill-category {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+
+        .skill-category h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+
+        .skill-tag {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 5px 10px;
+            margin: 3px;
+            border-radius: 15px;
+            font-size: 0.9rem;
+        }
+
+        .certifications {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 15px;
+        }
+
+        .cert-item {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+
+        .cert-name {
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .cert-org {
+            color: #667eea;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .contact-info {
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+            }
+            
+            .job-header {
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .section {
+                padding: 20px;
+            }
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            color: #666;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Oluwasanjo Stephen Adebayo</h1>
+            <p>Human Resources Professional | Cybersecurity Specialist | Cloud Practitioner</p>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <span>📍</span> Abuja, Nigeria
+                </div>
+                <div class="contact-item">
+                    <span>📞</span> 08138656245
+                </div>
+                <div class="contact-item">
+                    <span>✉️</span> oluwasanjoadebayo@gmail.com
+                </div>
+                <div class="contact-item">
+                    <span>🔗</span> <a href="https://www.linkedin.com/in/oluwasanjo-adebayo-05952a194">LinkedIn Profile</a>
+                </div>
+            </div>
+        </header>
+
+        <section class="section">
+            <h2>Professional Experience</h2>
+            
+            <div class="job">
+                <div class="job-header">
+                    <div>
+                        <div class="job-title">Recruitment and Record Officer</div>
+                        <div class="company">Kwara State Internal Revenue Service</div>
+                    </div>
+                    <div class="date">Dec 2022 - Aug 2024</div>
+                </div>
+                <ul>
+                    <li>Plan and coordinate all recruitment process according to the organization's policy</li>
+                    <li>Administration of all staff files and records ensuring completeness, accuracy, validity and authenticity</li>
+                    <li>Assist in payroll preparation by providing relevant data</li>
+                    <li>Process documentation and prepare reports relating to personnel activities</li>
+                    <li>Communicate all management decisions on HR policies to staff</li>
+                    <li>Develop, administer and evaluate applicant entry test</li>
+                    <li>Conduct exit interviews to identify reasons for employee's termination</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <div>
+                        <div class="job-title">Freelancer</div>
+                        <div class="company">Livingston Research</div>
+                    </div>
+                    <div class="date">Nov 2022 - Jun 2024</div>
+                </div>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <div>
+                        <div class="job-title">Head Technical Department</div>
+                        <div class="company">Quick Access Macro and Micro Limited</div>
+                    </div>
+                    <div class="date">Jul 2020 - May 2021</div>
+                </div>
+                <ul>
+                    <li>Supervise projects and manage contractors</li>
+                    <li>Allocate and manage all real estate products across the country</li>
+                    <li>Engage and manage all customer related issues regarding real estate locations</li>
+                    <li>Assist the Marketing Department to improve sales by providing logistics and regular stock update</li>
+                    <li>Support the Head, Business Development Management in day to day activities</li>
+                    <li>Support the activities of the Chief Operating Officer</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <div>
+                        <div class="job-title">Technical Support Officer</div>
+                        <div class="company">Quick Access Macro and Micro Limited</div>
+                    </div>
+                    <div class="date">May 2020 - Jul 2020</div>
+                </div>
+                <ul>
+                    <li>Manage customer database and update all customer records and files</li>
+                    <li>Allocate and manage all real estate products across the country</li>
+                    <li>Assist the marketing department to improve sales by providing logistics</li>
+                    <li>Support the Head, Business Development Management in day to day activities</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <div>
+                        <div class="job-title">Basic Technology Instructor</div>
+                        <div class="company">National Youth Service Corps</div>
+                    </div>
+                    <div class="date">Nov 2017 - Nov 2018</div>
+                </div>
+                <ul>
+                    <li>Designed Instruction for Middle School Students</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <div>
+                        <div class="job-title">Statistical Analyst</div>
+                        <div class="company">Kwara State Bureau of Statistics</div>
+                    </div>
+                    <div class="date">Aug 2016 - Oct 2016</div>
+                </div>
+                <ul>
+                    <li>Enumeration, Data Collection, Data Collation</li>
+                    <li>Data Sorting and Data Analysis</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Education</h2>
+            <div class="education-item">
+                <div class="degree">Masters in Information Management (MIM)</div>
+                <div class="school">Ahmadu Bello University, Zaria, Nigeria</div>
+                <div class="date">In Progress</div>
+            </div>
+            <div class="education-item">
+                <div class="degree">Bachelor of Science in Mathematics</div>
+                <div class="school">University of Ilorin, Ilorin, Nigeria</div>
+                <div class="date">September 2017 - Second Class Division</div>
+            </div>
+            <div class="education-item">
+                <div class="degree">Secondary School Certificate</div>
+                <div class="school">Union Baptist Grammar School, Ilorin</div>
+                <div class="date">June 2012</div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Cybersecurity</h3>
+                    <span class="skill-tag">SIEM</span>
+                    <span class="skill-tag">Access Controls</span>
+                    <span class="skill-tag">Network Security</span>
+                    <span class="skill-tag">Incident Response</span>
+                    <span class="skill-tag">GRC</span>
+                </div>
+                <div class="skill-category">
+                    <h3>Cloud & Technology</h3>
+                    <span class="skill-tag">AWS Services</span>
+                    <span class="skill-tag">Microsoft Azure</span>
+                    <span class="skill-tag">HTML5/CSS3</span>
+                    <span class="skill-tag">Javascript</span>
+                </div>
+                <div class="skill-category">
+                    <h3>Professional Skills</h3>
+                    <span class="skill-tag">HR Management</span>
+                    <span class="skill-tag">Data Analysis</span>
+                    <span class="skill-tag">Project Management</span>
+                    <span class="skill-tag">Team Leadership</span>
+                </div>
+                <div class="skill-category">
+                    <h3>Core Competencies</h3>
+                    <span class="skill-tag">Problem Solving</span>
+                    <span class="skill-tag">Communication</span>
+                    <span class="skill-tag">Time Management</span>
+                    <span class="skill-tag">Microsoft Office</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Certifications</h2>
+            <div class="certifications">
+                <div class="cert-item">
+                    <div class="cert-name">ISO/IEC 27001:2022 Lead Auditor</div>
+                    <div class="cert-org">Mastermind Assurance (June 2025)</div>
+                </div>
+                <div class="cert-item">
+                    <div class="cert-name">Microsoft Certified: Azure Fundamentals</div>
+                    <div class="cert-org">Microsoft (June 2025)</div>
+                </div>
+                <div class="cert-item">
+                    <div class="cert-name">AWS Certified Cloud Practitioner</div>
+                    <div class="cert-org">Amazon Web Services (December 2024)</div>
+                </div>
+                <div class="cert-item">
+                    <div class="cert-name">Certified in Cybersecurity (CC)</div>
+                    <div class="cert-org">(ISC)² - ID: 1675814 (August 2024)</div>
+                </div>
+                <div class="cert-item">
+                    <div class="cert-name">Student Member (CIPM)</div>
+                    <div class="cert-org">Chartered Institute of Personnel Management (September 2024)</div>
+                </div>
+                <div class="cert-item">
+                    <div class="cert-name">Professional Student Member (PFS)</div>
+                    <div class="cert-org">Chartered Institute of Taxation of Nigeria (July 2023)</div>
+                </div>
+                <div class="cert-item">
+                    <div class="cert-name">Human Resources Management Certificate</div>
+                    <div class="cert-org">University of Minnesota - Carlson School (2023)</div>
+                </div>
+                <div class="cert-item">
+                    <div class="cert-name">ISO 9001:2015 Quality Management System</div>
+                    <div class="cert-org">The Knights of Safety Academy (June 2023)</div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>References available upon request</p>
+        </footer>
+    </div>
+</body>
+</html>
